@@ -18,7 +18,7 @@ def endpoint(request):
 
     # Github file url
     github_file_url = "https://github.com/micky225/HNG_stage_one"
-    github_repo_url = ...
+    github_repo_url = "https://github.com/micky225/HNG_stage_one/blob/master/Endpoint/views.py"
    
 
     response_data = {
@@ -27,7 +27,7 @@ def endpoint(request):
         "utc_time": current_utc_time.strftime(utc_time_format),
         "track": track,
         "github_file_url": github_file_url,
-        "github_repo_url": github_repo_ur,
+        "github_repo_url": github_repo_url,
         "status_code": 200
     }
 
