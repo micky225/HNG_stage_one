@@ -10,8 +10,8 @@ from django.utils import timezone
 
 class StageOne(APIView):
     def get(self, request):
-        slack_name = request.query_params.get('slack_name','Michael')
-        track = request.query_params.get('track','Backend')
+        slack_name = request.query_params.get("slack_name",'Michael')
+        track = request.query_params.get("track","backend")
 
         # Current Week
         current_day = datetime.datetime.now().strftime("%A")
@@ -19,6 +19,8 @@ class StageOne(APIView):
         # Current UTC time
         current_utc_time = timezone.now()
         utc_time_format = "%Y-%m-%dT%H:%M:%SZ"
+
+        
 
         # Github file url
         github_file_url = "https://github.com/micky225/HNG_stage_one"
